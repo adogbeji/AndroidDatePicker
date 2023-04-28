@@ -13,7 +13,12 @@ class MainActivity : AppCompatActivity() {
         val datePickerButton: Button  = findViewById(R.id.datePicker)
 
         datePickerButton.setOnClickListener {
-            Toast.makeText(this, "Working", Toast.LENGTH_SHORT).show()
+            showDatePicker()
+//            Toast.makeText(this,  "Working!", Toast.LENGTH_SHORT).show()
         }
+    }
+
+    fun showDatePicker() {
+        Toast.makeText(this,  "Working!", Toast.LENGTH_SHORT).show()
     }
 }
