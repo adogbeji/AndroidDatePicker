@@ -1,5 +1,6 @@
 package org.benjaminakponasa.datepicker
 
+import android.app.DatePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -19,6 +20,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun showDatePicker() {
+
+//        DatePickerDialog()
+
         Toast.makeText(this,  "Working!", Toast.LENGTH_SHORT).show()
     }
 }
