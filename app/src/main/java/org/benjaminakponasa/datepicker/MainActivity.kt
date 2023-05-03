@@ -23,8 +23,12 @@ class MainActivity : AppCompatActivity() {
     fun showDatePicker() {
         val calendar = Calendar.getInstance()
         val year = calendar.get(Calendar.YEAR)
+        val month = calendar.get(Calendar.MONTH)
+        val day = calendar.get(Calendar.DAY_OF_MONTH)
 
-//        DatePickerDialog()
+//        DatePickerDialog(this,
+//            DatePickerDialog.OnDateSetListener {}
+//        )
 
         Toast.makeText(this,  "Working!", Toast.LENGTH_SHORT).show()
     }
