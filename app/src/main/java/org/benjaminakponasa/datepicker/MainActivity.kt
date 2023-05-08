@@ -28,12 +28,15 @@ class MainActivity : AppCompatActivity() {
 
         DatePickerDialog(
             this,
-            DatePickerDialog.OnDateSetListener{ view, year, month, dayOfMonth -> },
+            DatePickerDialog.OnDateSetListener{ view, year, month, dayOfMonth ->
+
+                Toast.makeText(this,  "Working!", Toast.LENGTH_SHORT).show()
+            },
             year,
             month,
             day
         )
 
-        Toast.makeText(this,  "Working!", Toast.LENGTH_SHORT).show()
+//        Toast.makeText(this,  "Working!", Toast.LENGTH_SHORT).show()
     }
 }
