@@ -4,10 +4,14 @@ import android.app.DatePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
+
+    var selectedDate: TextView? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -29,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         DatePickerDialog(this,
             { view, year, month, dayOfMonth ->
 
-                Toast.makeText(this, "Year: $year, Month: ${month + 1}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Year: $year, Month: ${month + 1}, Day: $dayOfMonth", Toast.LENGTH_SHORT).show()
             },
             year,
             month,
