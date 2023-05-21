@@ -10,13 +10,14 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
-    var selectedDate: TextView? = null
+    private var selectedDate: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         val datePickerButton: Button  = findViewById(R.id.datePicker)
+        selectedDate = findViewById(R.id.selectedDate)
 
         datePickerButton.setOnClickListener {
             showDatePicker()
@@ -34,6 +35,8 @@ class MainActivity : AppCompatActivity() {
             { view, year, month, dayOfMonth ->
 
                 Toast.makeText(this, "Year: $year, Month: ${month + 1}, Day: $dayOfMonth", Toast.LENGTH_SHORT).show()
+
+                val date = "$day/${month + 1}/$year"
             },
             year,
             month,
