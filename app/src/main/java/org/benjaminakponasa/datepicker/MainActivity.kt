@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import java.text.SimpleDateFormat
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -39,6 +40,8 @@ class MainActivity : AppCompatActivity() {
                 val date = "$day/${month + 1}/$year"
 
                 selectedDate?.text = date
+
+                val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
             },
             year,
             month,
