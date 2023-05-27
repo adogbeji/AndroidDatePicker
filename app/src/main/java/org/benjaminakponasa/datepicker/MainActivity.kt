@@ -42,6 +42,8 @@ class MainActivity : AppCompatActivity() {
                 selectedDate?.text = date
 
                 val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
+
+                val dateObj = sdf.parse(date)
             },
             year,
             month,
