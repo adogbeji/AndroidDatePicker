@@ -44,6 +44,8 @@ class MainActivity : AppCompatActivity() {
                 val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
 
                 val dateObj = sdf.parse(date)
+
+                val selectedDateInMinutes = dateObj.time / 60000
             },
             year,
             month,
