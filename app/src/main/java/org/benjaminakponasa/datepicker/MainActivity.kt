@@ -46,6 +46,12 @@ class MainActivity : AppCompatActivity() {
                 val dateObj = sdf.parse(date)
 
                 val selectedDateInMinutes = dateObj.time / 60000
+
+                val currentDate = sdf.parse(sdf.format(System.currentTimeMillis()))
+
+                val currentDateInMinutes = currentDate.time / 60000
+
+                val differenceInMinutes = currentDateInMinutes - selectedDateInMinutes
             },
             year,
             month,
