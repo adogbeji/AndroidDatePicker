@@ -12,6 +12,7 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
 
     private var selectedDate: TextView? = null
+    private var displayAge: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         val datePickerButton: Button  = findViewById(R.id.datePicker)
         selectedDate = findViewById(R.id.selectedDate)
+        displayAge = findViewById(R.id.displayAge)
 
         datePickerButton.setOnClickListener {
             showDatePicker()
