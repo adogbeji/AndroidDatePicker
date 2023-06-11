@@ -54,6 +54,8 @@ class MainActivity : AppCompatActivity() {
                 val currentDateInMinutes = currentDate.time / 60000
 
                 val differenceInMinutes = currentDateInMinutes - selectedDateInMinutes
+
+                displayAge?.text = differenceInMinutes.toString()
             },
             year,
             month,
