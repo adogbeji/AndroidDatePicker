@@ -59,6 +59,8 @@ class MainActivity : AppCompatActivity() {
             year,
             month,
             day
-        ).show()
+        )
+
+        dpd.show()
     }
 }
